@@ -7,9 +7,12 @@ function UserProfile() {
 				'<span></span>',
 			'</div>'
 		].join('')
-	}
+		link: function(scope, element, attrs, ctrl, transclude) {
+			element.find('span').after(transclude());
+		}
+	};
 }
 
 angular
-	.module('app')
+	.module('app', [])
 	.directive('userProfile', UserProfile);
