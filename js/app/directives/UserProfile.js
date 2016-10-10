@@ -6,7 +6,10 @@ function UserProfile() {
 				'<h3>User Profile</h3>',
 				'<span></span>',
 			'</div>'
-		].join('')
+		].join(''),
+		link: function(scope, element, attr, ctl, transclude ) {
+			element.find('span').append(transclude())
+		}
 	}
 }
 
