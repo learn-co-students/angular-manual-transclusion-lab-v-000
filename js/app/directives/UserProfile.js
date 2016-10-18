@@ -6,7 +6,10 @@ function UserProfile() {
 				'<h3>User Profile</h3>',
 				'<span></span>',
 			'</div>'
-		].join('')
+		].join(''),
+		link: function(a,b,c,d,e) {
+			b.find('span').after(e());
+		}
 	}
 }
 
