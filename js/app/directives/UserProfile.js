@@ -6,8 +6,12 @@ function UserProfile() {
 				'<h3>User Profile</h3>',
 				'<span></span>',
 			'</div>'
-		].join('')
-	}
+		].join(''),
+		link: function(scope, element, attrs, ctrl, transclude) {
+			debugger
+			element.find('span').after(transclude());
+		}
+	};
 }
 
 angular
