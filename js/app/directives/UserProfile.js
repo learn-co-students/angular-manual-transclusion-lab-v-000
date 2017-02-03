@@ -8,7 +8,7 @@ function UserProfile() {
 			'</div>'
 		].join(''),
 		link: function(scope, elem, attr, ctrl, transclude){
-			elem.find('span').after(transclude())
+			elem.find('span').after(transclude()) 
 		}
 	}
 }
